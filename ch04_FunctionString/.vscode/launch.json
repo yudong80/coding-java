@@ -1,0 +1,137 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch MyStorageV2",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.prj.MyStorageV2",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyStorageV1",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.prj.MyStorageV1",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringReplaceIsEmpty",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.StringReplaceIsEmpty",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringStartsEndsWith",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.StringStartsEndsWith",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringIndexOf",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.StringIndexOf",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringSubstringEquals",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.StringSubstringEquals",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringLengthCharAt",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.StringLengthCharAt",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringBasic",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.StringBasic",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch InputNameString",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.InputNameString",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch InputNameChar",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.InputNameChar",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScopeBasic",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.ScopeBasic",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticBasic",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.StaticBasic",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch EvenOddNumbersV2",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.EvenOddNumbersV2",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch EvenOddNumbersV1",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.EvenOddNumbersV1",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FibonacciV4",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.FibonacciV4",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FibonacciV3",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.FibonacciV3",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FibonacciV2",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.FibonacciV2",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
+            "name": "Launch with Arguments Prompt",
+            "request": "launch",
+            "mainClass": "",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
