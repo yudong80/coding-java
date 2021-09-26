@@ -66,20 +66,23 @@ public class Operators {
 	}
 	
 	public static void 비트연산자() {
-		int a = 0x0A;  		//1100
+		//비트 AND(&)
+		int a = 0x0A;  		//1010
 		int mask1 = 0x01; 	//0001
 		int mask2 = 0x02;	//0010
-		int mask3 = 0x04;	//0100
-		int mask4 = 0x08;	//1000
-		
 		System.out.println("16진수 a의 첫번째 자리수는? " + (a & mask1));
+		System.out.println("16진수 a의 두번째 자리수는? " + (a & mask2));
+
+		//비트 OR(&) 
+		System.out.println("7(0x111) OR 16(0x1000) = " + (7 | 16));
+		System.out.println("8(0x100) OR 15(0x111) = " + (8 | 15));
 	}
 	
 	public static void main(String[] args) { 
-		산술연산자();
+		//산술연산자();
 		//대입연산자();
 		//비교연산자();
 		//논리연산자();
-		//비트연산자();
+		비트연산자();
 	}
 }
