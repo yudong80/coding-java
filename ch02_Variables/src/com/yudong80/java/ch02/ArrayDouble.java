@@ -1,6 +1,6 @@
 package com.yudong80.java.ch02;
 
-public class ArrayDoubleExampleV1 {
+public class ArrayDouble {
 	public static void main(String[] args) {
 		double[] sensorData; 		//배열 선언
 		sensorData= new double[] {  //배열 정의 

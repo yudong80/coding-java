@@ -2,7 +2,7 @@ package com.yudong80.java.ch02;
 
 import java.util.Scanner;
 
-public class ArrayStringExampleV1 {
+public class ArrayString {
 	public static void main(String[] args) {
 		String[] cities = new String[10];
 		

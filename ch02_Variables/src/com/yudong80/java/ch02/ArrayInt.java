@@ -1,6 +1,6 @@
 package com.yudong80.java.ch02;
 
-public class ArrayIntExampleV1 {
+public class ArrayInt {
 	public static void main(String [] args) { 
 		int[] grades = {80, 95, 92, 70};
 		
