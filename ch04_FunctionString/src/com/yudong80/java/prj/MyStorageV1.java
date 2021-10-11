@@ -15,7 +15,7 @@ public class MyStorageV1 {
 	}
 	
 	static int selectMenu(Scanner s) { 
-		System.out.print("원하는 메뉴를 선택하세요? ");
+		System.out.print("원하는 메뉴를 선택하세요: ");
 		int select = s.nextInt();
 		return select;
 	}

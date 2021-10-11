@@ -9,7 +9,7 @@ public class StringSubstringEquals {
 		
 		String samePoem = poem.substring(0);
 		String firstWord = poem.substring(0, 3);
-		String secondLine = poem.substring(35);
+		String secondLine = poem.substring(37);
 		System.out.println("시의 내용은:\n" + samePoem);
 		System.out.println("시의 첫번째 단어는: " + firstWord);
 		System.out.println("시의 두번째 줄은: " + secondLine);
