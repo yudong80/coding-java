@@ -11,7 +11,7 @@ public class ScopeBasic {
 		System.out.println("지역변수 number의 값은 " + number);
 		
 		//2. 멤버 변수 (5장 참조)
-//		String str = title;
+		//String str = title;  참조 불가
 		System.out.println("멤버변수 title은 참조할 수 없습니다.");
 		
 		//3. static 변수
