@@ -3,13 +3,14 @@ package com.yudong80.java.ch09;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class PoemReaderV1 {
 	private static final String POEM_FILE = "poem.txt";
 
 	public static void main(String[] args) throws IOException {
 		//1. FileReader 생성 
-		BufferedReader br = new BufferedReader(new FileReader(POEM_FILE));
+		BufferedReader br = new BufferedReader(new FileReader(POEM_FILE, StandardCharsets.UTF_8));
 		
 		//2. 제목과 작가 출력 
 		String title = br.readLine();
