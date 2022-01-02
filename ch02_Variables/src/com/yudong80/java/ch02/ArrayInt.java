@@ -9,7 +9,7 @@ public class ArrayInt {
 		System.out.println("영어: " + grades[2]);
 		System.out.println("과학: " + grades[3]);
 		
-		double average = (grades[0] + grades[1] + grades[2] + grades[3]) / grades.length;
+		double average = ((double)(grades[0] + grades[1] + grades[2] + grades[3])) / grades.length;
 		
 		System.out.println("유동의 평균 점수: " + average);		
 	}

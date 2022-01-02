@@ -12,7 +12,7 @@ public class BeforeArray {
 		System.out.println("영어: " + english);
 		System.out.println("과학: " + science);
 		
-		double average = (korean + math + english + science) / 4;
+		double average = ((double)(korean + math + english + science)) / 4;
 		
 		System.out.println("유동의 평균 점수: " + average);
 	}
