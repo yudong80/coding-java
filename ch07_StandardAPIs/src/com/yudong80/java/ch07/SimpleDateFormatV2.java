@@ -9,7 +9,7 @@ public class SimpleDateFormatV2 {
 		//1. Date 클래스로 현재 시간 얻기 
 		Date now = new Date();
 		
-		//2. 다양한 날씨 양식 적용 
+		//2. 다양한 날씨 형식 적용 
 		SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");
 		SimpleDateFormat dateAndDay = new SimpleDateFormat("yyyy년 MM월 dd일 EEEE");
 		SimpleDateFormat time24based = new SimpleDateFormat("HH:mm:ss");

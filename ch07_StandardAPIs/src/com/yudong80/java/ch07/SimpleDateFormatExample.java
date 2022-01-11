@@ -8,7 +8,7 @@ public class SimpleDateFormatExample {
 		//1. Date 클래스로 현재 시간 얻기
 		Date now = new Date();
 		
-		//2. SimpleDateFormat 클래스로 양식 적용 
+		//2. SimpleDateFormat 클래스로 형식 적용 
 		SimpleDateFormat dateFormat1 = new SimpleDateFormat("yyyy.MM.dd");
 		SimpleDateFormat dateFormat2 = new SimpleDateFormat("yyyy-MM-dd");
 		SimpleDateFormat dateFormat3 = new SimpleDateFormat("yyyy/MM/dd");

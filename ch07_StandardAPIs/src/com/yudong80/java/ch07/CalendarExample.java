@@ -5,7 +5,7 @@ import java.util.Calendar;
 
 public class CalendarExample {
 	public static void main(String[] args) {
-		//1. 날짜 양식 정하기
+		//1. 날짜 형식 정하기
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy년 MM월 dd일");
 		
 		//2. 오늘 날짜 
