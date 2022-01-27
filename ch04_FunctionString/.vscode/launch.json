@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NumberFilter",
+            "request": "launch",
+            "mainClass": "com.yudong80.java.ch04.NumberFilter",
+            "projectName": "ch04_FunctionString_630d8d3c"
+        },
+        {
+            "type": "java",
             "name": "Launch MyStorageV2",
             "request": "launch",
             "mainClass": "com.yudong80.java.prj.MyStorageV2",
