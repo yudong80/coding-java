@@ -4,6 +4,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class SetBasic {
+	static Set<String> prepareAlphabets() {
+		Set<String> set = new HashSet<>();
+		set.add("A");
+		set.add("B");
+		set.add("C");
+		set.add("D");
+		return set;
+	}
+
 	public static void main(String[] args) {
 		//0. 자료 준비 
 		Set<String> alphabets = prepareAlphabets();
@@ -23,14 +32,5 @@ public class SetBasic {
 		for (String a : alphabets) {
 			System.out.println("알파벳: " + a);
 		}
-	}
-	
-	static Set<String> prepareAlphabets() {
-		Set<String> set = new HashSet<>();
-		set.add("A");
-		set.add("B");
-		set.add("C");
-		set.add("D");
-		return set;
 	}
 }

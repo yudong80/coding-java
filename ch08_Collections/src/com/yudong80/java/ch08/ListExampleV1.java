@@ -4,13 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListExampleV1 {
+	static List<String> preparePlanetList() {
+		List<String> p = new ArrayList<>();
+		p.add("수성");
+		p.add("금성");
+		p.add("지구"); 
+		return p;
+	}	
 	public static void main(String[] args) {
 		//0. 데이터 준비 
 		List<String> planets = preparePlanetList();
 		
 		//1. add(index, E) 메서드 
 		planets.add(3, "화성");
-		System.out.println("화성 추가 후:: " + planets);
+		System.out.println("화성 추가 후: " + planets);
 		
 		//2. addAll() 메서드 
 		List<String> otherPlanets = new ArrayList<>();
@@ -27,15 +34,7 @@ public class ListExampleV1 {
 		//4. isEmpty() 메서드
 		boolean isEmpty = planets.isEmpty();
 		int size = planets.size();
-		System.out.println("planets 리스트 비어있는가? " + isEmpty + " >> size? " + size);
-
-	}
-	
-	static List<String> preparePlanetList() {
-		List<String> p = new ArrayList<>();
-		p.add("수성");
-		p.add("금성");
-		p.add("지구"); 
-		return p;
+		System.out.println("planets 리스트 비어있는가? " + 
+			isEmpty + " >> size? " + size);
 	}
 }

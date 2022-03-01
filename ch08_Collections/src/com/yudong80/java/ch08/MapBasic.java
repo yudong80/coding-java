@@ -4,6 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MapBasic {
+	static Map<String, String> prepareCapitalMap() {
+		Map<String, String> map = new HashMap<>();
+		map.put("대한민국", "서울");
+		map.put("미국", "워싱턴DC");
+		map.put("스웨덴", "스톡홀름");
+		map.put("영국", "런던");
+		return map;
+	}
+
 	public static void main(String[] args) {
 		//0. 자료 준비 
 		Map<String, String> capitalMap = prepareCapitalMap();
@@ -30,15 +39,6 @@ public class MapBasic {
 			String capital = capitalMap.get(country);
 			System.out.println(country + "의 수도는? " + capital);
 		}
-	}
-	
-	static Map<String, String> prepareCapitalMap() {
-		Map<String, String> map = new HashMap<>();
-		map.put("대한민국", "서울");
-		map.put("미국", "워싱턴DC");
-		map.put("스웨덴", "스톡홀름");
-		map.put("영국", "런던");
-		return map;
 	}
 }
 
