@@ -1,20 +1,20 @@
 package com.yudong80.java.ch05;
 
 public class StudentExample {
-	//¸É¹ö º¯¼öµé 
-	String name = "À¯µ¿";
-	String major = "ÄÄÇ»ÅÍ°øÇĞ";
-	String minor = "°æ¿µÇĞ";
+	//ë©¤ë²„ ë³€ìˆ˜ë“¤
+	String name = "ìœ ë™";
+	String major = "ì»´í“¨í„°ê³µí•™";
+	String minor = "ê²½ì˜í•™";
 	int[] grades = {80, 70, 100, 90};
 	
-	//¸Ş¼­µå
+	//ë©”ì„œë“œ
 	void printInfo() {
-		System.out.println("ÇĞ»ı ÀÌ¸§: " + name);
-		System.out.println("Àü°ø: " + major);
-		System.out.println("ºÎÀü°ø: " + minor);
-		System.out.println("¼ºÀû:");
+		System.out.println("í•™ìƒ ì´ë¦„: " + name);
+		System.out.println("ì „ê³µ: " + major);
+		System.out.println("ë¶€ì „ê³µ: " + minor);
+		System.out.println("ì„±ì :");
 		for (int grade : grades) {
-			System.out.println(grade + "Á¡");
+			System.out.println(grade + "ì ");
 		}
 	}
 	
