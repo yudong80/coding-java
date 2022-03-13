@@ -10,7 +10,7 @@ public class Gugudan {
         int dan = s.nextInt();
 
         // 2. 구구단은 2단에서 9단까지만 가능합니다. 
-        if (2 > dan || dan < 9) {
+        if (2 > dan || dan > 9) {
             System.out.println("구구단은 2단~ 9단까지만 선택할 수 있습니다. 프로그램을 종료합니다.");
             s.close();
             return;
