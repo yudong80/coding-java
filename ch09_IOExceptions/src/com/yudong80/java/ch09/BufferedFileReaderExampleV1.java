@@ -3,6 +3,7 @@ package com.yudong80.java.ch09;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class BufferedFileReaderExampleV1 {
 	private static final int EOF = -1;
@@ -10,7 +11,8 @@ public class BufferedFileReaderExampleV1 {
 	
 	public static void main(String[] args) throws IOException {
 		//1. FileReader 생성 
-		BufferedReader br = new BufferedReader(new FileReader(TARGET_TEXT_FILE));
+		BufferedReader br = new BufferedReader(
+			new FileReader(TARGET_TEXT_FILE, StandardCharsets.UTF_8));
 		
 		//2. 버퍼로 읽기 
 		long sTime = System.currentTimeMillis();

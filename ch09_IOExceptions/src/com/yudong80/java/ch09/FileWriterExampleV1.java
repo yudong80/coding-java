@@ -2,13 +2,14 @@ package com.yudong80.java.ch09;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class FileWriterExampleV1 {
 	private static final String TARGET_TEXT_FILE = "diary.txt";
 	
 	public static void main(String[] args) throws IOException {
 		//1. FileWriter 생성 
-		FileWriter fw = new FileWriter(TARGET_TEXT_FILE);
+		FileWriter fw = new FileWriter(TARGET_TEXT_FILE, StandardCharsets.UTF_8);
 		
 		//2. write() 메서드 
 		String title = "오늘의 할일\n";

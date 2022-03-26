@@ -2,10 +2,10 @@ package com.yudong80.java.ch09;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class PoemWriterV2 {
 	private static final String DEFAULT_INPUT_FILE = "poem.txt";
@@ -22,9 +22,9 @@ public class PoemWriterV2 {
 		BufferedReader br; 
 		
 		try {
-			br = new BufferedReader(new FileReader(inputFile));
-		} catch (FileNotFoundException e) {
-			System.out.println("FileNotFoundException 발생: " + e.getMessage());
+			br = new BufferedReader(new FileReader(inputFile, StandardCharsets.UTF_8));
+		} catch (IOException e) {
+			System.out.println("IOException 발생: " + e.getMessage());
 			return EMPTY_STRING;
 		}
 		
@@ -57,7 +57,7 @@ public class PoemWriterV2 {
 	public void writeOutput(String content) {
 		BufferedWriter bw = null;
 		try {
-			bw = new BufferedWriter(new FileWriter(outputFile));
+			bw = new BufferedWriter(new FileWriter(outputFile, StandardCharsets.UTF_8));
 			bw.write(content);
 			bw.flush();    
 		} catch (IOException ioe) {

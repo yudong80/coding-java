@@ -2,6 +2,7 @@ package com.yudong80.java.ch09;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class BeforeBufferedReader {
 	private static final int EOF = -1;
@@ -9,7 +10,7 @@ public class BeforeBufferedReader {
 	
 	public static void main(String[] args) throws IOException {
 		//1. FileReader 생성 
-		FileReader fr = new FileReader(TARGET_TEXT_FILE);
+		FileReader fr = new FileReader(TARGET_TEXT_FILE, StandardCharsets.UTF_8);
 		
 		//2. 한글자씩 읽기 
 		long sTime = System.currentTimeMillis(); 

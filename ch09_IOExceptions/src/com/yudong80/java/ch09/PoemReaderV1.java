@@ -10,7 +10,8 @@ public class PoemReaderV1 {
 
 	public static void main(String[] args) throws IOException {
 		//1. FileReader 생성 
-		BufferedReader br = new BufferedReader(new FileReader(POEM_FILE, StandardCharsets.UTF_8));
+		BufferedReader br = new BufferedReader(
+			new FileReader(POEM_FILE, StandardCharsets.UTF_8));
 		
 		//2. 제목과 작가 출력 
 		String title = br.readLine();

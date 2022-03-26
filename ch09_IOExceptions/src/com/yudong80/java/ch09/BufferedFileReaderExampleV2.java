@@ -1,9 +1,9 @@
 package com.yudong80.java.ch09;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class BufferedFileReaderExampleV2 {
 	private static final String TARGET_TEXT_FILE = "sample-text-file.txt";
@@ -13,9 +13,10 @@ public class BufferedFileReaderExampleV2 {
 		BufferedReader br = null; 
 		
 		try { 
-			br = new BufferedReader(new FileReader(TARGET_TEXT_FILE));
-		} catch (FileNotFoundException e) {
-			System.out.println("FileNotFoundException 발생: " + e.getMessage());
+			br = new BufferedReader(
+				new FileReader(TARGET_TEXT_FILE, StandardCharsets.UTF_8));
+		} catch (IOException e) {
+			System.out.println("IOException 발생: " + e.getMessage());
 			return;
 		}
 		

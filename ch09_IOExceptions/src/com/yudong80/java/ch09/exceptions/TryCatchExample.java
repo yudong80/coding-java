@@ -14,7 +14,8 @@ public class TryCatchExample {
 			System.out.println("여기는 도달하지 않습니다");
 			
 		} catch (NullPointerException e) {
-			System.out.println("NullPointerException 발생: " + e.getMessage());
+			System.out.println("NullPointerException 발생: " + 
+				e.getMessage());
 		}
 		
 		//3. 확인 

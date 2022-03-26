@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class PoemWriterV1 {
 	private static final String DEFAULT_INPUT_FILE = "poem.txt";
@@ -17,7 +18,7 @@ public class PoemWriterV1 {
 	}
 	
 	public String readInputPoem(String inputFile) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(inputFile));
+		BufferedReader br = new BufferedReader(new FileReader(inputFile, StandardCharsets.UTF_8));
 		StringBuilder sb = new StringBuilder();
 		String line;
 		
@@ -32,7 +33,7 @@ public class PoemWriterV1 {
 	}
 	
 	public void writeOutput(String content) throws IOException {
-		BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
+		BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile, StandardCharsets.UTF_8));
 		
 		bw.write(content);
 		bw.flush(); //버퍼의 내용을 비웁니다.  

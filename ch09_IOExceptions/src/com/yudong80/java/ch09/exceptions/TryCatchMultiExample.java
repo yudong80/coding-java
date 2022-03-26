@@ -7,9 +7,11 @@ public class TryCatchMultiExample {
 		try {
 			throw new Exception();						
 		} catch (NullPointerException e) {
-			System.out.println("NullPointerException 발생: " + e.getMessage());
+			System.out.println("NullPointerException 발생: " + 
+				e.getMessage());
 		} catch (Exception e) {
-			System.out.println("Exception 발생: " + e.getMessage());
+			System.out.println("Exception 발생: " + 
+				e.getMessage());
 		}
 	}
 }

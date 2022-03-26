@@ -15,9 +15,11 @@ public class TryCatchFinallyExample {
 		try {
 			throw new ArithmeticException("산술 예외 발생"); 			
 		} catch (NullPointerException e1) {
-			System.out.println("NullPointerException 발생: " + e1.getMessage());
+			System.out.println("NullPointerException 발생: " + 
+				e1.getMessage());
 		} catch (ArithmeticException e2) {
-			System.out.println("ArithmeticException 발생: " + e2.getMessage());
+			System.out.println("ArithmeticException 발생: " + 
+				e2.getMessage());
 		} finally { 
 			System.out.println("이 문장은 finally 실행됩니다!!");
 		}

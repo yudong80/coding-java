@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class PoemWriterV3 {
 	private static final String DEFAULT_INPUT_FILE = "poem.txt";
@@ -22,7 +23,7 @@ public class PoemWriterV3 {
 		StringBuilder sb = new StringBuilder();
 		String line;
 		
-		try (BufferedReader br = new BufferedReader(new FileReader(inputFile))){
+		try (BufferedReader br = new BufferedReader(new FileReader(inputFile, StandardCharsets.UTF_8))){
 			while((line = br.readLine()) != null) {
 				sb.append(line).append('\n');
 			}
@@ -38,7 +39,7 @@ public class PoemWriterV3 {
 	}
 	
 	public void writeOutput(String content) {
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile))){
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile, StandardCharsets.UTF_8))){
 			bw.write(content);
 			bw.flush();    
 		} catch (IOException ioe) {
